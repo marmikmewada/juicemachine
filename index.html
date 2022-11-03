@@ -17,26 +17,28 @@
                     <button class="firstnextbutton btn" onclick="firstnextbuttonfunction()" type="button" value="submit">Next</button>
                 </div>
                 <div class="secondpage hidden">
+                    <!-- facing problem below to remove input value with js  -->
                     <input class="whichfruitone" type="text" value="First Fruit">
-                    <input class="whichfruittwo" type="text" value="Second Fruit">
+                    <input onclick="" class="whichfruittwo" type="text" value="Second Fruit">
                     <button class="firstsubmitbutton btn" onclick="firstsubmitbuttonfunction()" type="button" value="submit">Add</button>
                 </div>
-                <div class="thirdpage hidden">
-                    <p>Wowww,I must admit your choice of fruits is really amazing. </p>
-                    <p>please also enter quantity of both ${fruitone) & ${fruittwo}.</p>
+                <div class="thirdpage">
+                    <p>Wowww, I must admit your choice of fruits is really amazing. </p>
+                    <p class="thirdpagepara"></p>
                     <button class="secondnextbutton btn" onclick="secondnextbuttonfunction()" type="button" value="submit">Next</button>
                 </div>
                 <div class="fourthpage hidden">
-                    <input class="howmanyfruitone" type="text" value="No of ${First Fruit}">
-                    <input class="howmanyfruittwo" type="text" value="No of ${Second Fruit">
-                    <button class="secondsubmitbutton btn" onclick="secondsubmitbutton()" type="button" value="submit">Make juice</button>
+                
+                    <input class="howmanyfruitone" type="number">
+                    <input class="howmanyfruittwo" type="number">
+                    <button class="secondsubmitbutton btn" onclick="secondsubmitbuttonfunction()" type="button" value="submit">Make juice</button>
                 </div>
                 <div class="fifthpage hidden">
-                <h1 class="result">how was the juice ?</h1>
+                <p class="resultpara"></p>
                 <h2 class="ratingmessage">Please Rate Us</h2>
                 </div>
-            
             </div>
+            
         </div>
     </div>
 
