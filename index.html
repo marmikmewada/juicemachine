@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>juicer machines</title>
+</head>
+<body>
+    <div class="major major-hover">
+        <div class="minor">
+            <div class="main">
+                <div class="firstpage hidden">
+                    <h1>Welcome To Juicer Machine Game</h1>
+                    <p>Please enter the name of the two fruits you want to make juice of on the next page by clicking the next below</p>
+                    <button class="firstnextbutton btn" onclick="firstnextbuttonfunction()" type="button" value="submit">Next</button>
+                </div>
+                <div class="secondpage hidden">
+                    <input class="whichfruitone" type="text" value="First Fruit">
+                    <input class="whichfruittwo" type="text" value="Second Fruit">
+                    <button class="firstsubmitbutton btn" onclick="firstsubmitbuttonfunction()" type="button" value="submit">Add</button>
+                </div>
+                <div class="thirdpage hidden">
+                    <p>Wowww,I must admit your choice of fruits is really amazing. </p>
+                    <p>please also enter quantity of both ${fruitone) & ${fruittwo}.</p>
+                    <button class="secondnextbutton btn" onclick="secondnextbuttonfunction()" type="button" value="submit">Next</button>
+                </div>
+                <div class="fourthpage hidden">
+                    <input class="howmanyfruitone" type="text" value="No of ${First Fruit}">
+                    <input class="howmanyfruittwo" type="text" value="No of ${Second Fruit">
+                    <button class="secondsubmitbutton btn" onclick="secondsubmitbutton()" type="button" value="submit">Make juice</button>
+                </div>
+                <div class="fifthpage hidden">
+                <h1 class="result">how was the juice ?</h1>
+                <h2 class="ratingmessage">Please Rate Us</h2>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

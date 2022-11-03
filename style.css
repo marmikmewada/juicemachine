@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.major {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("bgfruit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: 100% 80%;
+    filter: brightness(200%);
+    /* z-index: 1; */
+    background: black;
+    cursor: pointer;
+    
+
+}
+.hidden {
+    visibility: hidden;
+}
+
+
+.minor {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-image: url("cartoonn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 75%;
+    border-radius: 7rem;
+    /* z-index: 2; */
+    cursor: pointer;
+}
+
+.main{
+    grid-column: 4/10;
+    grid-row: 4/10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+background: rgba(245, 241, 11, 0.73);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.6px);
+-webkit-backdrop-filter: blur(1.6px);
+cursor: pointer;
+}
+
+.firstpage {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+.secondpage {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+.thirdpage {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+.fourthpage {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+.fifthpage {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+
+
+
