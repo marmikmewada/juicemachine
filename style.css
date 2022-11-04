@@ -54,12 +54,12 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     /* flex-wrap: wrap; */
-background: rgba(245, 241, 11, 0.73);
+background: #002c7d;
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.6px);
--webkit-backdrop-filter: blur(1.6px);
-cursor: pointer;
+-webkit-backdrop-filter: blur(1.6px);*/
+cursor: pointer; 
 }
 
 .firstpage {

@@ -17,9 +17,12 @@
                     <button class="firstnextbutton btn" onclick="firstnextbuttonfunction()" type="button" value="submit">Next</button>
                 </div>
                 <div class="secondpage hidden">
-                    <!-- facing problem below to remove input value with js  -->
-                    <input class="whichfruitone" type="text" value="First Fruit">
-                    <input onclick="" class="whichfruittwo" type="text" value="Second Fruit">
+                    
+                    
+                    <input class="whichfruitone" type="text" onfocus="this.value=''" value="fruit one"><!-- facing problem below to remove input value with js  -->
+                    <input class="whichfruittwo" type="text" onfocus="this.value=''" value="fruit two">
+                    <!-- <input onfocus="this.value='" class="whichfruitone" type="text" value="First Fruit">
+                    <input onclick="" class="whichfruittwo" type="text" value="Second Fruit"> -->
                     <button class="firstsubmitbutton btn" onclick="firstsubmitbuttonfunction()" type="button" value="submit">Add</button>
                 </div>
                 <div class="thirdpage">
@@ -29,8 +32,10 @@
                 </div>
                 <div class="fourthpage hidden">
                 
-                    <input class="howmanyfruitone" type="number">
-                    <input class="howmanyfruittwo" type="number">
+                    <!-- <input class="howmanyfruitone" type="number">
+                    <input class="howmanyfruittwo" type="number"> -->
+                    <input class="howmanyfruitone" type="text" onfocus="this.value=''" value="quantity"><!-- facing problem below to remove input value with js  -->
+                    <input class="howmanyfruittwo" type="text" onfocus="this.value=''" value="quantity">
                     <button class="secondsubmitbutton btn" onclick="secondsubmitbuttonfunction()" type="button" value="submit">Make juice</button>
                 </div>
                 <div class="fifthpage hidden">

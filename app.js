@@ -33,6 +33,17 @@ const secondnextbutton = document.querySelector(".secondnextbutton");
 const firstsubmitbutton = document.querySelector(".firstsubmitbutton");
             // second submit button 
 const secondsubmitbutton = document.querySelector(".secondsubmitbutton");
+    // declaring first fruit input in variable and second fruit like first 
+    const firstinput = document.querySelector(".whichfruitone");
+    // console.log(firstinput);
+    const secondinput =  document.querySelector(".whichfruittwo");
+    // console.log(secondinput);
+    const thirdinput = document.querySelector(".howmanyfruitone");
+    // console.log(thirdinput);
+    const fourthinput = document.querySelector(".howmanyfruittwo");
+    // console.log(fourthinput);
+
+
                 // selecting inputs in second and fourth page to remove value attribute when click by user 
 const inputAll = document.querySelectorAll("input");
                 // gettingfruitname in variable 
@@ -40,11 +51,19 @@ const inputAll = document.querySelectorAll("input");
                 // getting second fruit input in a variable 
                 const secondfruit = document.querySelector(".whichfruittwo").value;   
                             // getting quantity of fruitone in numbers 
-const firstfruitquantity = parseInt( document.querySelector(".howmanyfruitone").value);
-// getting quantity of fruittwo in numbers 
-const secondfruitquantity = parseInt( document.querySelector(".howmanyfruittwo").value);
+// const firstfruitquantity = document.querySelector(".howmanyfruitone").value;
+// // getting quantity of fruittwo in numbers 
+// const secondfruitquantity = parseInt( document.querySelector(".howmanyfruittwo").value);
                     // selecting the third page para to confirm and woww the choice of user 
 const thirdpagepara = document.querySelector(".thirdpagepara");
+
+
+
+
+
+
+
+
 // utility 
 secondpage.classList.add("hidden");
 firstpage.classList.remove("hidden");
@@ -54,9 +73,9 @@ fifthpage.classList.add("hidden");
 // functions  below 
 
 // the below function removeinput all doesnt Work 
-const removeinputAll = () => {
-    inputAll.removeAttribute("value");
-}
+// const removeinputAll = (element) => {
+//     element.style.background= "red";
+// }
 
 const firstnextbuttonfunction = () => {
     secondpage.classList.remove("hidden");
@@ -64,8 +83,15 @@ const firstnextbuttonfunction = () => {
     thirdpage.classList.add("hidden");
     fourthpage.classList.add("hidden");
     fifthpage.classList.add("hidden");
+    // setInterval(firstinput.addEventListener("change", clickinputbutton(firstinput)), 3000);
+
 
 }   
+const clickinputbutton = (element) => {
+    element.style.background = "red";
+}
+
+
 const firstsubmitbuttonfunction = () => {
     thirdpage.classList.remove("hidden");
     firstpage.classList.add("hidden");
@@ -83,27 +109,29 @@ const secondnextbuttonfunction = () => {
     thirdpage.classList.add("hidden");
     secondpage.classList.add("hidden");
     fifthpage.classList.add("hidden");
+ 
 
 };
+const intopieces = (fruitquantity) => {
+    return 4 * fruitquantity;
+}
+function secondsubmitbuttonfunction() {   //make juice button
+    
+        const fruitonenoofpieces = intopieces(parseInt(document.querySelector(".howmanyfruitone").value));
+        const fruittwonoofpieces = intopieces(parseInt( document.querySelector(".howmanyfruittwo").value));
+        console.log(fruitonenoofpieces);
 
 
-function secondsubmitbuttonfunction() {
-
+    
     firstpage.classList.add("hidden");
     secondpage.classList.add("hidden");
     thirdpage.classList.add("hidden");
     fourthpage.classList.add("hidden");
     fifthpage.classList.remove("hidden");
-    // const cutpieces = (fruitname) => {
-    // return Number(fruitname * 4);
-    // };
-
-
-    const fruitonenoofpieces = 4 * firstfruitquantity;
-    const fruittwonoofpieces = 4 * secondfruitquantity;
     const resultpara = document.querySelector(".resultpara");
-    resultpara.textContent = `your juice was made with ${fruitonenoofpieces} pieces of ${firstfruit} & ${fruittwonoofpieces} pieces of ${secondfruit}`;
+    resultpara.innerHTML = `your juice was made with ${fruitonenoofpieces} pieces of ${firstfruit} & ${fruittwonoofpieces} pieces of ${secondfruit}`;
 
 }
+
 
 
